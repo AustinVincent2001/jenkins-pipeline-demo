@@ -48,6 +48,10 @@ pipeline {
             steps {
                 echo "Production Stage: Deploy application to production environment (${PRODUCTION_ENV}) using AWS EC2"
             }
+            stage('Deploy to new Production') {
+            steps {
+                echo "Production Stage: new Deploy application to production environment (${PRODUCTION_ENV}) using AWS EC2"
+            }
         }
     }
 }

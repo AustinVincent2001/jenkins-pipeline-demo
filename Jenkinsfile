@@ -37,7 +37,7 @@ pipeline {
                 echo "Deploy Stage: Deploy application to staging environment (${STAGING_ENV}) using AWS EC2"
             }
         }
-
+ 
         stage('Integration Tests on Staging') {
             steps {
                 echo "Staging Test Stage: Perform integration testing on staging using Selenium"

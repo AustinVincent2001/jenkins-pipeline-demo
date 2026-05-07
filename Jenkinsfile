@@ -25,7 +25,7 @@ pipeline {
                 echo "Code Analysis Stage: Analyse code quality using SonarQube"
             }
         }
-
+ 
         stage('Security Scan') {
             steps {
                 echo "Security Scan Stage: Scan application for vulnerabilities using OWASP ZAP"
